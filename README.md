@@ -6,9 +6,7 @@ Adrián García, Marc Duque, Diego del Castillo
 
 ### TIPO DE JUEGO:
 
-El juego consiste en hacer que nuestro protagonista avance y consiga la mayor distancia posible.
-
-Runner 2D de scroll horizontal.
+El juego es un Runner 2D de scroll horizontal que consiste en hacer que nuestro protagonista avance y consiga la mayor distancia posible.
 
 ### MECÁNICAS PRINCIPALES:
 
