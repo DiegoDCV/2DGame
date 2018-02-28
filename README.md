@@ -2,7 +2,7 @@
 
 ### Don’t fishing
 
-Adrián García, Marc Duque, Diego del Castillo
+Adrián García, Marc Duque, Diego del Castillo.
 
 ### TIPO DE JUEGO:
 
