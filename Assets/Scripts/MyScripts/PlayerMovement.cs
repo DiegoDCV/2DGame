@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpForce;
+    public float jumpTime;
+    private float jumpTimeCounter;
 
     public Rigidbody2D myRigidbody;
     public BoxCollider2D myCollider;
@@ -23,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
         myCollider.GetComponent<BoxCollider2D>();
 
         myAnimator.GetComponent<Animator>();
+
+        jumpTimeCounter = jumpTime;
 		
 	}
 	
@@ -35,10 +39,35 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+            if(grounded)
+            {
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+            }
+
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(jumpTimeCounter > 0)
+            {
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+                jumpTimeCounter -= Time.deltaTime;
+            }
+
+        }
+
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            jumpTimeCounter = 0;
+        }
+
+        if(grounded)
+        {
+            jumpTimeCounter = jumpTime;
         }
 
         myAnimator.SetFloat("Speed", myRigidbody.velocity.x);
         myAnimator.SetBool("Grounded", grounded);
 	}
+
 }
