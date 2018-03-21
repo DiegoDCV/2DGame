@@ -6,6 +6,7 @@ public class DangerDetection : MonoBehaviour
 {
     public GameObject player;
     public GameObject dead;
+    public GamingManager restart;
 	// Use this for initialization
 	void Start ()
     {
@@ -22,6 +23,7 @@ public class DangerDetection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        restart.Dead();
         player.SetActive(false);
         dead.SetActive(true);
     }
