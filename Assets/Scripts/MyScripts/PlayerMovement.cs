@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator myAnimator;
 
+    public AudioSource jumpAudio;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -42,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
             if(grounded)
             {
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+                jumpAudio.Play();
             }
 
         }

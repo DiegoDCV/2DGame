@@ -7,6 +7,7 @@ public class DangerDetection : MonoBehaviour
     public GameObject player;
     public GameObject dead;
     public GamingManager restart;
+    public AudioSource deadAudio;
 	// Use this for initialization
 	void Start ()
     {
@@ -24,6 +25,7 @@ public class DangerDetection : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         restart.Dead();
+        deadAudio.Play();
         player.SetActive(false);
         dead.SetActive(true);
     }

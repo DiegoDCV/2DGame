@@ -6,6 +6,7 @@ public class PickUpCoin : MonoBehaviour
 {
     public int scoreToGive;
     private ScoreManager theScoreManager;
+    public AudioSource coinAudio;
 
 	// Use this for initialization
 	void Start ()
@@ -26,6 +27,7 @@ public class PickUpCoin : MonoBehaviour
         {
             theScoreManager.coinsCount++;
             theScoreManager.AddScore(scoreToGive);
+            coinAudio.Play();
             gameObject.SetActive(false);
         }
     }
