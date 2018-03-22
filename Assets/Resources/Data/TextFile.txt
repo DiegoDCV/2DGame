@@ -1,0 +1,16 @@
+﻿id	spanish	english
+start	Empezar	New Game
+options	Opciones	Settings
+exit	Salir	Exit
+graphics	Gráficos	Graphics
+sound	Sonido	Sound
+resolution	Resolución	Resolution
+quality	Calidad	Quality
+language	Idioma	Language
+english	Inglés	English
+spanish	Español	Spanish
+music	Música	Music
+back	Atrás	Back
+fast	Baja	Low
+good	Media	Good
+fantastic	Fantástica	Fantastic
