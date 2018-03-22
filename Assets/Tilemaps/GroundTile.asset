@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d746e0082aaaaf0458b2b02bb4d45a47, type: 3}
   m_Name: GroundTile
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 21300000, guid: bc08d7939c913534ca6d4ac8edc94d4c, type: 3}
+  m_DefaultSprite: {fileID: 21300000, guid: cb5cecfe875206446b2a6d71d3f6a448, type: 3}
   m_DefaultColliderType: 2
   m_NeighborType: 0
   m_TilingRules:
   - m_Neighbors: 0000000002000000000000000000000000000000000000000100000000000000
     m_Sprites:
-    - {fileID: 21300000, guid: d9198a12743593147b3847589237ff5c, type: 3}
+    - {fileID: 21300000, guid: 622530381150a0e469c8ebb1a01a6c0f, type: 3}
     - {fileID: 21300000, guid: 168c01336936ef14095d156dd88adf60, type: 3}
     m_AnimationSpeed: 5
     m_PerlinScale: 0.5
@@ -27,9 +27,9 @@ MonoBehaviour:
     m_RandomTransform: 0
   - m_Neighbors: 0100000001000000010000000100000001000000010000000100000001000000
     m_Sprites:
-    - {fileID: 21300000, guid: bc08d7939c913534ca6d4ac8edc94d4c, type: 3}
-    - {fileID: 21300000, guid: b1bc0d1872161f84c9848b19f2f86fef, type: 3}
-    - {fileID: 21300000, guid: bfc2de604157f174d869986d77d2d87c, type: 3}
+    - {fileID: 21300000, guid: cb5cecfe875206446b2a6d71d3f6a448, type: 3}
+    - {fileID: 21300000, guid: fb3f1a387a1aae04b801407adc908e0a, type: 3}
+    - {fileID: 21300000, guid: 76d5e0193dd1a2c48b8f0a484d7520bb, type: 3}
     m_AnimationSpeed: 1
     m_PerlinScale: 0.638
     m_RuleTransform: 0

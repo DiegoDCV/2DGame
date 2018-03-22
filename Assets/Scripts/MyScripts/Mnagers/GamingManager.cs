@@ -48,7 +48,8 @@ public class GamingManager : MonoBehaviour
     public void Dead()
     {
         theScoreManager.scoreIncreasing = false;
-        theplayer.gameObject.SetActive(false);
+        theplayer.moveSpeed = 0.0f;
+        deadMenu.SetActive(true);
     }
 
 }

@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource jumpAudio;
 
+    public int lifes;
+    public int maxLife;
+    public GamingManager manager;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -29,7 +33,8 @@ public class PlayerMovement : MonoBehaviour
         myAnimator.GetComponent<Animator>();
 
         jumpTimeCounter = jumpTime;
-		
+
+        lifes = 2;
 	}
 	
 	// Update is called once per frame
@@ -71,6 +76,26 @@ public class PlayerMovement : MonoBehaviour
 
         myAnimator.SetFloat("Speed", myRigidbody.velocity.x);
         myAnimator.SetBool("Grounded", grounded);
+        myAnimator.SetInteger("Lifes", lifes);
 	}
+
+    public void AddLife(int heal)
+    {
+        lifes += heal;
+        if(lifes >= maxLife)
+        {
+            lifes = maxLife;
+        }
+    }
+
+    public void Damage(int damage)
+    {
+        lifes -= damage;
+        if(lifes <= 0)
+        {
+            lifes = 0;
+            manager.Dead();
+        }
+    }
 
 }
