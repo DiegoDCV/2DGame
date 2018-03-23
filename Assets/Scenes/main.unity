@@ -8961,6 +8961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2061678603}
+  counter: 0
+  loadingScene: 0
 --- !u!1001 &688508460
 Prefab:
   m_ObjectHideFlags: 0
@@ -38977,6 +38979,84 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7c5500806a9b8f4fbef1c158b5694f4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1310796920
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 212500545506683160, guid: 83cdcab4924187548a6c343147401ac7,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078541680041194, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 212500545506683160, guid: 83cdcab4924187548a6c343147401ac7,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212500545506683160, guid: 83cdcab4924187548a6c343147401ac7,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 17777.268
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 17777.268
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890522399151316, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 17777.268
+      objectReference: {fileID: 0}
+    - target: {fileID: 114204846688823038, guid: 83cdcab4924187548a6c343147401ac7,
+        type: 2}
+      propertyPath: desiredTime
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 83cdcab4924187548a6c343147401ac7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1311144752 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4561171144837054, guid: d7c5500806a9b8f4fbef1c158b5694f4,
@@ -39726,7 +39806,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1371682342
 RectTransform:
@@ -48716,6 +48796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2061678603}
+  counter: 0
+  loadingScene: 0
 --- !u!114 &2061678606
 MonoBehaviour:
   m_ObjectHideFlags: 0
